@@ -30,7 +30,7 @@ jobs:
           static_site_generator: next
 
       - name: build vite
-        run: vite build
+        run: npx vite build
         env:
           NEXT_PUBLIC_MAINTENANCE_MODE_RESOURCES: ${{ secrets.NEXT_PUBLIC_MAINTENANCE_MODE_RESOURCES }}
           NEXT_PUBLIC_MAINTENANCE_MODE_SCHEDULE: ${{ secrets.NEXT_PUBLIC_MAINTENANCE_MODE_SCHEDULE }}
